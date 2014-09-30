@@ -46,7 +46,7 @@ Full code is in the sample.
 * Make the sample with ViewHolders/CacheHolders for the ListView
 
 ## License 
-* see [LICENSE](https://github.com/juaagugui/AndroidFilteringList/blob/master/LICENSE) file
+* see [LICENSE](https://github.com/juaagugui/AndroidFilterableList/blob/master/LICENSE) file
 
 ## Contact
 #### Developer/Company
