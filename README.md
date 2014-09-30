@@ -17,13 +17,13 @@ With this component you can filter ListViews with adapters different from ArrayA
 ###Implementation
  * Create a new **ListFilter<T>** which implements **IFilteredListListener<T>** and  **IFilterableItem<T>** and define the required methods:
 
- 		**public void onSearchResult(List<T> objects);**
+ 		public void onSearchResult(List<T> objects);
  		
- onSearchResult links filtered objects with the original list in the array adapter. This will be called every time the filter changes.
+ **onSearchResult** links filtered objects with the original list in the array adapter. This will be called every time the filter changes.
  		
- 		**public String getStringForFilter(T item);**
+ 		public String getStringForFilter(T item);
  		
- getStringForFilter extracts the String value of T (as generic Object). In the sample, depending on the checkbox checked, with filter for their title, or their description. 
+ **getStringForFilter** extracts the String value of T (as generic Object). In the sample, depending on the checkbox checked, with filter for their title, or their description. 
  
  **Advice:** Make sure that you are filtering texts that are being displayed in the UI, for a good user experience.
 
