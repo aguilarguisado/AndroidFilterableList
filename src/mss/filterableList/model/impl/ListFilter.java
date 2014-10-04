@@ -9,6 +9,15 @@ import mss.filterableList.model.IFilterableItem;
 import android.widget.BaseAdapter;
 import android.widget.Filter;
 
+/**
+ * 
+ * @author Juan Aguilar Guisado
+ * @since 1.0
+ *
+ *
+ * @param <T>
+ */
+
 public class ListFilter<T> extends Filter {
 
 	private List<T> adapterFilterElements;

@@ -63,7 +63,9 @@ public class ListviewAdapterWithFilter extends BaseAdapter implements IFilteredL
 	}
 
 	public void changeFilterType(Boolean filterByTitle) {
+		//We change the criterion for filtering
 		this.filterByTitle = filterByTitle;
+		//We have to notify filter component that filters has changed
 		this.filter.filterTypeChanged();
 	}
 
@@ -79,6 +81,10 @@ public class ListviewAdapterWithFilter extends BaseAdapter implements IFilteredL
 
 	@Override
 	public String getStringForFilter(Task item) {
+		//This gets the String for filters.
+		//Depending on our UI events, business logic etc. it should
+		//return the appropriate String to filter for.
+		
 		if (filterByTitle) {
 			return item.getTitle();
 		} else {
